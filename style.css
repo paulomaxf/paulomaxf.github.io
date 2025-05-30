@@ -1,253 +1,37 @@
-/* Reset */
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* CABEÇALHO */
 header {
-    background: white;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-header .logo {
-    float: left;
-    width: 150px;
-}
-
-header nav {
-    float: right;
-    display: flex;
-    gap: 30px;
-}
-
-header nav a {
-    color: #333;
+nav a {
+    color: white;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-header nav a:hover {
-    color: #e74c3c; /* Vermelho compatível com seus ícones */
-}
-
-.btn-header {
-    background: #e74c3c;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background 0.3s;
-}
-
-.btn-header:hover {
-    background: #c0392b;
-}
-
-/* BANNER PRINCIPAL */
-.banner {
-    background: #1a1a1a;
-    color: white;
-    padding: 50px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.banner .container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.banner .content {
-    width: 50%;
-}
-
-.banner .image {
-    width: 50%;
-}
-
-.banner .image img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-.banner .btn {
-    background: white;
-    color: #1a1a1a;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    transition: background 0.3s;
-}
-
-.banner .btn:hover {
-    background: #f4f4f4;
-}
-
-/* SEÇÃO DE VANTAGENS */
-#vantagens {
-    padding: 50px 0;
-}
-
-#vantagens h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.card {
-    text-align: center;
+.secao {
     padding: 20px;
-    background: #f4f4f4;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 80px;
-    margin-bottom: 15px;
-}
-
-/* SEÇÃO COMO FUNCIONA */
-#como-funciona {
-    background: #f4f4f4;
-    padding: 50px 0;
-}
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.step {
-    text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.step img {
-    width: 80px;
-    margin-bottom: 15px;
-}
-
-/* RODAPÉ */
 footer {
-    background: #1a1a1a;
-    color: white;
-    padding: 50px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.info p {
-    margin: 8px 0;
-}
-
-.social a {
-    margin-right: 20px;
-}
-
-.social a img {
-    width: 30px;
-}
-
-.copyright {
     text-align: center;
-    margin-top: 30px;
-}
-
-/* BOTÃO WHATSAPP FIXO */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #e74c3c;
+    padding: 15px;
+    background-color: #007bff;
     color: white;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: background 0.3s;
-}
-
-.whatsapp-btn:hover {
-    background: #c0392b;
-}
-
-@media (max-width: 768px) {
-    .banner .container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .banner .image {
-        order: 1;
-        margin-bottom: 30px;
-    }
-    
-    .banner .content {
-        order: 2;
-    }
-    
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .steps {
-        grid-template-columns: 1fr;
-    }.btn-header {
-  background-color: #e74c3c;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.btn-header:hover {
-  background: #c0392b;
-}
 }
