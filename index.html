@@ -3,52 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camelo Entregas - Entregas Rápidas SP</title>
+    <title>Camelo Entregas - Motoboy Rápido</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- CABEÇALHO -->
     <header>
-        <h1>Camelo Entregas</h1>
-        <p>Entregas rápidas e seguras na região metropolitana de São Paulo</p>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Camelo Entregas">
+            </a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#vantagens">Vantagens</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#app">App</a>
+                <a href="#clientes">Clientes</a>
+                <a href="#contato" class="btn-header">Clique aqui para orçamento</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="sobre" class="secao">
-        <h2>Sobre Nós</h2>
-        <img src="https://imagens.unsplash.com/photo-1607083206173-5ac6a7f4ebf9?auto=format&fit=crop&w=600&q=60" alt="Motoboy de entregas" style="max-width: 100%; border-radius: 8px; margin-bottom: 15px;">
-        <p>
-            Entregas rápidas e seguras na região metropolitana de São Paulo. Moto própria, comprometimento e agilidade no prazo.
-        </p>
+    <!-- SEÇÃO PRINCIPAL -->
+    <section id="home" class="banner">
+        <div class="container">
+            <div class="content">
+                <h1>Entregas motoboy</h1>
+                <p>Atendemos pessoas físicas e empresas</p>
+                <p>Serviço de entregas urgentes em toda São Paulo entrega a partir de R$ 14,00</p>
+                <a href="#contato" class="btn">Clique aqui para orçamento</a>
+                <p>Contato: (11) 3136-1615</p>
+            </div>
+            <div class="image">
+                <img src="images/motoboy.jpg" alt="Motoboy em ação">
+            </div>
+        </div>
     </section>
 
-    <section id="servicos" class="secao">
-        <h2>Serviços</h2>
-        <ul>
-            <li>Documentos</li>
-            <li>Pacotes pequenos</li>
-            <li>Compras online</li>
-            <li>Retirada e entrega imediata</li>
-        </ul>
+    <!-- SEÇÃO DE VANTAGENS -->
+    <section id="vantagens">
+        <div class="container">
+            <h2>Vantagens</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/icon-rapidez.png" alt="Rapidez">
+                    <h3>Rapidez</h3>
+                    <p>Entregas em até 30 minutos na região central</p>
+                </div>
+                <div class="card">
+                    <img src="images/icon-seguranca.png" alt="Segurança">
+                    <h3>Segurança</h3>
+                    <p>Motoristas treinados e veículos em dia</p>
+                </div>
+                <div class="card">
+                    <img src="images/icon-preco.png" alt="Preço justo">
+                    <h3>Preço justo</h3>
+                    <p>Preços acessíveis para todos os bolsos</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contato" class="secao">
-        <h2>Contato</h2>
-        <p><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"/> WhatsApp: <a href="https://wa.me/551131361615?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seus+serviços." target="_blank">(11) 3136-1615</a></p>
-        <p><img src="https://img.icons8.com/color/48/000000/location.png" alt="Localização"/> Atendemos em São Paulo e toda região metropolitana.</p>
+    <!-- SEÇÃO COMO FUNCIONA -->
+    <section id="como-funciona">
+        <div class="container">
+            <h2>Como funciona</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="images/step1.png" alt="Passo 1">
+                    <h3>Pedido</h3>
+                    <p>Faça seu pedido via WhatsApp ou App</p>
+                </div>
+                <div class="step">
+                    <img src="images/step2.png" alt="Passo 2">
+                    <h3>Confirmação</h3>
+                    <p>Recebemos e confirmamos seu pedido</p>
+                </div>
+                <div class="step">
+                    <img src="images/step3.png" alt="Passo 3">
+                    <h3>Entrega</h3>
+                    <p>Seu produto chega rápido e seguro</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- RODAPÉ -->
     <footer>
-        <p>&copy; 2025 Camelo Entregas - Todos os direitos reservados.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="info">
+                    <h3>Contato</h3>
+                    <p>(11) 3136-1615</p>
+                    <p>sao.paulo@camelorentregas.com</p>
+                </div>
+                <div class="social">
+                    <h3>Redes Sociais</h3>
+                    <a href="#"><img src="images/icon-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Camelo Entregas - Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
 
-    <!-- Botão Fixo de WhatsApp -->
-    <a href="https://wa.me/551131361615?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+seus+serviços." target="_blank" class="whatsapp-btn">
-        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"> Contato
+    <!-- BOTÃO WHATSAPP FIXO -->
+    <a href="https://wa.me/551131361615?text=Quero%20saber%20mais%20sobre%20seus%20serviços!" class="whatsapp-btn">
+        <img src="images/icon-whatsapp.png" alt="WhatsApp"> Calcula frete agora
     </a>
 
 </body>
