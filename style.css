@@ -238,5 +238,16 @@ footer {
     
     .steps {
         grid-template-columns: 1fr;
-    }
+    }.btn-header {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-header:hover {
+  background: #c0392b;
+}
 }
